@@ -1,17 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { beginGame, flippedCards } from './cardSlice';
 import { useEffect } from 'react';
-window.addEventListener('load', function resize(){
-    
-    let windowWidth = window.innerWidth;
-    document.getElementById('cards').style.width = `${windowWidth}px`;
-    document.getElementById('cards').style.height = `${windowWidth}px`
-    let cardArray = document.getElementsByClassName('card')
-    for (let y = 0; y < cardArray.length; y++){
-        cardArray[y].style.width = `${windowWidth/5}px`
-        cardArray[y].style.height = `${windowWidth/5}px`
-    }
-})
+
 window.addEventListener('resize', function trty(){
     
     let windowWidth = window.innerWidth;
@@ -105,4 +95,15 @@ export function Cards() {
     )
     }
 
+    document.addEventListener('DOMContentLoaded', function resize(){
+    
+        let windowWidth = window.innerWidth;
+        document.getElementById('cards').style.width = `${windowWidth}px`;
+        document.getElementById('cards').style.height = `${windowWidth}px`
+        let cardArray = document.getElementsByClassName('card')
+        for (let y = 0; y < cardArray.length; y++){
+            cardArray[y].style.width = `${windowWidth/5}px`
+            cardArray[y].style.height = `${windowWidth/5}px`
+        }
+    })
     
