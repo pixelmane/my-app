@@ -7,7 +7,67 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#stats {
+  font-size: 7vw;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@keyframes flip {
+  0% {
+    height: 20vw;
+    
+  }
+  50% {
+    height: 0px;
+  
+  }
+  
+  100% {
+    height: 20vw;
+    
+  }
+  
+}
+@keyframes disappear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+.card {
+  height: 100px;
+  width: 100px;
+  border: 5px solid black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#restart {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+#restart:active {
+  background-color: aliceblue;
 }
