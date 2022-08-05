@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { beginGame, flippedCards } from './cardSlice';
 import { useEffect } from 'react';
-document.addEventListener('DOMContentLoaded', function resize(){
+window.addEventListener('DOMContentLoaded', function resize(){
     
     let windowWidth = window.innerWidth;
     document.getElementById('cards').style.width = `${windowWidth}px`;
