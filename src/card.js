@@ -78,7 +78,7 @@ export function Cards() {
             flipTarget.style.animation = 'none';
             labelTarget.style.animation = 'none'
         }
-        setTimeout(resetFlip, 1000)
+        setTimeout(resetFlip, 500)
         }
         
         
